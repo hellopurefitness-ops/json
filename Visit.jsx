@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { hours, contact } from '../data.js';
+import { hours, contact } from './data.js';
 
 function isOpenNow() {
   const now = new Date();

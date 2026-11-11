@@ -1,4 +1,4 @@
-import { brand } from '../data.js';
+import { brand } from './data.js';
 
 export default function Footer() {
   return (

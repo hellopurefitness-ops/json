@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { beans } from '../data.js';
+import { beans } from './data.js';
 
 export default function CartDrawer({ open, cart, onClose, onUpdate, onClear }) {
   const [checkedOut, setCheckedOut] = useState(false);

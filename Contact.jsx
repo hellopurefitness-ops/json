@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { contact } from '../data.js';
+import { contact } from './data.js';
 
 const empty = { name: '', email: '', message: '' };
 

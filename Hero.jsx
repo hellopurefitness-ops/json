@@ -1,4 +1,4 @@
-import { brand } from '../data.js';
+import { brand } from './data.js';
 import { scrollToId } from './Navbar.jsx';
 
 export default function Hero() {

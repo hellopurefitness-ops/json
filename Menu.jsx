@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { menu } from '../data.js';
+import { menu } from './data.js';
 
 export default function Menu() {
   const categories = Object.keys(menu);

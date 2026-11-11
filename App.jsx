@@ -1,14 +1,14 @@
 import { useState } from 'react';
-import Navbar from './components/Navbar.jsx';
-import Hero from './components/Hero.jsx';
-import About from './components/About.jsx';
-import Menu from './components/Menu.jsx';
-import Beans from './components/Beans.jsx';
-import Recipes from './components/Recipes.jsx';
-import Visit from './components/Visit.jsx';
-import Contact from './components/Contact.jsx';
-import Footer from './components/Footer.jsx';
-import CartDrawer from './components/CartDrawer.jsx';
+import Navbar from './Navbar.jsx';
+import Hero from './Hero.jsx';
+import About from './About.jsx';
+import Menu from './Menu.jsx';
+import Beans from './Beans.jsx';
+import Recipes from './Recipes.jsx';
+import Visit from './Visit.jsx';
+import Contact from './Contact.jsx';
+import Footer from './Footer.jsx';
+import CartDrawer from './CartDrawer.jsx';
 
 export default function App() {
   const [cart, setCart] = useState({}); // { beanId: quantity }

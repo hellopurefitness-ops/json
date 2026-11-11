@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { brand } from '../data.js';
+import { brand } from './data.js';
 
 const links = [
   ['about', 'Story'],

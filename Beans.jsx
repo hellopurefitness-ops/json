@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { beans } from '../data.js';
+import { beans } from './data.js';
 
 const filters = ['All', 'Light', 'Medium', 'Dark'];
 
