@@ -4,6 +4,7 @@ import Hero from './components/Hero.jsx';
 import About from './components/About.jsx';
 import Menu from './components/Menu.jsx';
 import Beans from './components/Beans.jsx';
+import Recipes from './components/Recipes.jsx';
 import Visit from './components/Visit.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
@@ -38,6 +39,7 @@ export default function App() {
         <About />
         <Menu />
         <Beans onAdd={addToCart} />
+        <Recipes />
         <Visit />
         <Contact />
       </main>

@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { hours, contact } from '../data.js';
 
 function isOpenNow() {
@@ -10,7 +11,9 @@ function isOpenNow() {
 }
 
 export default function Visit() {
-  const open = isOpenNow();
+  // Computed in the browser so it uses the visitor's clock, not the server's.
+  const [open, setOpen] = useState(null);
+  useEffect(() => setOpen(isOpenNow()), []);
 
   return (
     <section id="visit" className="section visit">
@@ -19,9 +22,11 @@ export default function Visit() {
           <p className="eyebrow">Visit us</p>
           <h2>Come sit a while.</h2>
           <p className="visit__addr">{contact.address}</p>
-          <span className={`status ${open ? 'status--open' : 'status--closed'}`}>
-            <span className="status__dot" /> {open ? 'Open now' : 'Closed right now'}
-          </span>
+          {open !== null && (
+            <span className={`status ${open ? 'status--open' : 'status--closed'}`}>
+              <span className="status__dot" /> {open ? 'Open now' : 'Closed right now'}
+            </span>
+          )}
         </div>
 
         <table className="hours">

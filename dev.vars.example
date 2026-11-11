@@ -1,0 +1,4 @@
+# Copy this file to "dev.vars" for local development (npm run dev).
+# Never commit the real dev.vars file.
+WEBFLOW_API_TOKEN=paste-your-token-here
+COLLECTION_ID=6af4b99fa6cf8d3adf5cab67

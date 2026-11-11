@@ -5,6 +5,7 @@ const links = [
   ['about', 'Story'],
   ['menu', 'Menu'],
   ['beans', 'Shop Beans'],
+  ['recipes', 'Recipes'],
   ['visit', 'Visit'],
   ['contact', 'Contact'],
 ];
